@@ -169,4 +169,50 @@ button:hover {
   padding-left: 20px;
 }
 
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    background-size: cover;
+    padding: 1rem;
+  }
 
+  .registro-container {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  .contenido {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .juego, .instrucciones, .columna {
+    width: 100%;
+  }
+
+  input, select {
+    width: 100%;
+  }
+
+  .mesa {
+    padding: 10px;
+    min-height: 100px;
+  }
+
+  .ficha {
+    width: 40px;
+    height: 80px;
+    font-size: 20px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
