@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="registro-container">
+    <img src="logo.png" alt="">
+    <h2>Registro de Usuario</h2>
+    <br>
+    <form id="registroForm">
+      <label>Usuario:
+        <br>
+        <input type="text" name="usuario" required />
+      </label>
+      <br>
+      <label>Tipo de documento:<br>
+        <select name="tipoDocumento" required>
+          <option value="">Seleccione</option>
+          <option value="CC">Cédula</option>
+          <option value="TI">Tarjeta de Identidad</option>
+          <option value="CE">Cédula de extranjería</option>
+        </select>
+      </label>
+      <br>
+      <label>Número de documento:<br>
+        <input type="number" name="numeroDocumento" required />
+      </label>
+      <br>
+      <label>Número de habitación:<br>
+        <input type="text" name="habitacion" required />
+      </label>
+      <br>
+      <label>Servicio:
+        <br>
+        <input type="text" name="servicio" required />
+      </label>
+      <br>
+      <button type="submit">Registrarse</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('registroForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      window.location.href = 'domino.html';
+    });
+  </script>
+</body>
+</html>
